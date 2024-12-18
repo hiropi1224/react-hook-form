@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: "{app,components}/**/*.{tsx,ts,mjs,cjs,js}"
+      run: |
+        pnpm next lint --fix {staged_files}
+        git add {staged_files}
+      skip:
+        - merge
+        - rebase
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: "{app,components}/**/*.{tsx,ts,mjs,cjs,js}"
+      run: |
+        pnpm biome check --write {staged_files}
+        git add {staged_files}
