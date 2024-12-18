@@ -1,0 +1,23 @@
+{
+    "prettier.enable": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never",
+      "source.removeUnusedImports": "explicit"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "css.validate": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "cSpell.ignorePaths": [
+      "**/pnpm-lock.yaml",
+      "**/node_modules/**",
+      "**/vscode-extension/**",
+      "**/.git/objects/**",
+      ".vscode"
+    ],
+    "cSpell.words": [
+    ]
+  }
