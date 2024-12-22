@@ -18,5 +18,8 @@
     "**/.git/objects/**",
     ".vscode"
   ],
-  "cSpell.words": []
+  "cSpell.words": [
+    "lefthook",
+    "turbopack"
+  ]
 }
