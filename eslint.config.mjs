@@ -13,6 +13,9 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   ...tailwind.configs["flat/recommended"],
+  {
+    ignores: ["components/ui/**/*.tsx"],
+  }
 ];
 
 export default eslintConfig;
